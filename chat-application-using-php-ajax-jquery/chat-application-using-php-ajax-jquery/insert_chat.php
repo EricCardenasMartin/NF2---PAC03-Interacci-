@@ -24,6 +24,7 @@ $statement = $connect->prepare($query);
 if($statement->execute($data))
 {
 	echo fetch_user_chat_history($_SESSION['id'], $_POST['to_user_id'], $connect);
+	//print_r($_SESSION);
 }
 
 ?>

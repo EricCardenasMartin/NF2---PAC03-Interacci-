@@ -44,7 +44,7 @@ if(isset($_POST['login']))
 				";
 				$statement = $connect->prepare($sub_query);
 				$statement->execute();
-				$_SESSION['id'] = $connect->lastInsertId();
+				$_SESSION['login_details_id'] = $connect->lastInsertId();
 				header('location:index.php');
 			}
 			else
